@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+
+  <script src="app1.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+  integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+
+<title>Title of the document</title>
+</head>
+
+<body>
+  <section class="main">
+    <div class="formBox start">
+     <h3>Welcome to the best Quiz</h3>
+     <button id="start" type="submit" class="btn btn-primary next">Begin Quiz</button>
+    </div>
+
+    <div class="section1" style="display:none;">
+      <fieldset class="form-group">
+        <legend>Whose the best soccer play in the world?</legend>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="radioName" id="log" value="Messi">
+           Messi
+          </label>
+        </div>
+        <div class="form-check">
+        <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="radioName" value="Ronaldo">
+            Ronaldo
+          </label>
+        </div>
+        <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="radioName" value="Bunkdinho">
+            Bunkdinho
+          </label>
+      </fieldset>
+      <button id="start"type="submit" class="btn btn-primary back">Previous Question</button>
+      <button id="start"type="submit" class="btn btn-primary next">Next Question</button>
+      <!--Modal-->
+    </div>
+    <div class="section2" style="display:none;">
+      <fieldset class="form-group">
+        <legend>Whose the best soccer goalie?</legend>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="radioName" value="Cech">
+            Cech
+          </label>
+        </div>
+        <div class="form-check">
+        <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="radioName" id="optionsRadios2" value="Howard">
+            Howard
+          </label>
+        </div>
+        <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="radioName" id="optionsRadios3" value="Courois">
+            Courtois
+          </label>
+      </fieldset>
+      <button id="start"type="submit" class="btn btn-primary back">Previous Question</button>
+      <button id="start"type="submit" class="btn btn-primary next">Next Question</button>
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                       <h4 class="modal-title" id="myModalLabel">Correct Answer</h4>
+
+                  </div>
+                  <div class="modal-body">
+                    <p id="correct">Correct Answer Messi</p>
+                    <!-- <p id="wrong">Your Answer is</p> -->
+                    <div class="results"></div>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="section3" style="display:none;">
+      <fieldset class="form-group">
+        <legend>3rd Question</legend>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+            Option one is this and that&mdash;be sure to include why it's great
+          </label>
+        </div>
+        <div class="form-check">
+        <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+            Option two can be something else and selecting it will deselect option one
+          </label>
+        </div>
+        <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3">
+            Option three is disabled
+          </label>
+      </fieldset>
+      <button id="start"type="submit" class="btn btn-primary back">Previous Question</button>
+      <button id="start"type="submit" class="btn btn-primary next">Next Question</button>
+
+    </div>
+    <div class="section4" style="display:none;">
+      <fieldset class="form-group">
+        <legend>4th Question</legend>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+            Option one is this and that&mdash;be sure to include why it's great
+          </label>
+        </div>
+        <div class="form-check">
+        <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+            Option two can be something else and selecting it will deselect option one
+          </label>
+        </div>
+        <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3">
+            Option three is disabled
+          </label>
+      </fieldset>
+      <button id="start"type="submit" class="btn btn-primary back">Previous Question</button>
+      <button id="start"type="submit" class="btn btn-primary next">Next Question</button>
+    </div>
+    <div class="section5" style="display:none;">
+      <fieldset class="form-group">
+        <legend>5th Question</legend>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+            Option one is this and that&mdash;be sure to include why it's great
+          </label>
+        </div>
+        <div class="form-check">
+        <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+            Option two can be something else and selecting it will deselect option one
+          </label>
+        </div>
+        <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3">
+            Option three is disabled
+          </label>
+      </fieldset>
+      <button id="start"type="submit" class="btn btn-primary back">Previous Question</button>
+      <button id="start"type="submit" class="btn btn-primary next">Next Question</button>
+    </div>
+
+
+</form>
+</section>
+</body>
+
+
+</html>
